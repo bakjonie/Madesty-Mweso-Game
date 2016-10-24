@@ -34,4 +34,5 @@
     <style name="YellowTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="player2color">@color/Player2Color</item>
     </style>
+
 </resources>
