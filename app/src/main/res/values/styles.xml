@@ -8,4 +8,31 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="RedTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="appbar">@color/rAppBarColor</item>
+    </style>
+    <style name="LightBrownTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="textcolor">@color/TextColor</item>
+    </style>
+
+    <style name="WhiteTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="buttoncolor">@color/ButtonColor</item>
+    </style>
+
+    <style name="LightBlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="backgroundcolor">@color/BackgroundColor</item>
+    </style>
+
+    <style name="MaroonTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="gameboardcolor">@color/GameBoardColor</item>
+    </style>
+
+    <style name="GreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="player1color">@color/Player1Color</item>
+    </style>
+
+    <style name="YellowTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="player2color">@color/Player2Color</item>
+    </style>
+
 </resources>
