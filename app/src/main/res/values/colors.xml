@@ -7,11 +7,13 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="AppBarColor">#FFFF0000</color>
-    <color name="TaskBarColor">#303F9F</color>
+    <color name="StatusBarColor">#303F9F</color>
     <color name="TextColor">#FF302B2B</color>
     <color name="ButtonColor">#04832828</color>
     <color name="BackgroundColor">#5E05A5FB</color>
     <color name="GameBoardColor">#FFC35D5D</color>
+    <color name="NavigationBarColor">#fdd303</color>
+
     <color name="Player1">#05ee11</color>
     <color name="Player2">#fdd303</color>
 

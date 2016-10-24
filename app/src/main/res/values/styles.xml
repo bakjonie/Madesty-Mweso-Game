@@ -37,4 +37,12 @@
         <item name="player2color">@color/Player2Color</item>
     </style>
 
+    <style name="BlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="statusbarcolor">@color/StatusBarColorColor</item>
+    </style>
+
+    <style name="LYellowTheme.YellowTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="navigationbarcolor">@color/NavigationBarColor</item>
+    </style>
+
 </resources>
