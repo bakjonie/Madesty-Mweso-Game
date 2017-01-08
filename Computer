@@ -1,0 +1,111 @@
+public class Computer {
+
+    public Computer(){
+
+    }
+
+    public void nextMove(){
+
+        Gameboard g = PersistanceManager.getpGameboard();
+        GameState gameState = new GameState(g.player11, g.player12, g.player13, g.player21, g.player22,
+                g.player23, g.token1, g.token2, g.token3, g.isTurn);
+        int move = gameState.returnMove();
+
+        Coordinate temp1 = new Coordinate(0, 0, 0);
+        Coordinate temp2 = new Coordinate(0, 0, 0);
+
+        PersistanceManager.getpGameboard().isTurn = !(PersistanceManager.getpGameboard().isTurn);
+
+        if(move == 111){
+
+            temp1 = PersistanceManager.getpGameboard().player11.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token1.getCoord();
+
+            PersistanceManager.getpGameboard().player11.setCoord(temp2);
+            PersistanceManager.getpGameboard().token1.setCoord(temp1);
+
+        }
+        else if(move == 112){
+
+            temp1 = PersistanceManager.getpGameboard().player11.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token2.getCoord();
+
+            PersistanceManager.getpGameboard().player11.setCoord(temp2);
+            PersistanceManager.getpGameboard().token2.setCoord(temp1);
+
+        }
+        else if(move == 113){
+
+            temp1 = PersistanceManager.getpGameboard().player11.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token3.getCoord();
+
+            PersistanceManager.getpGameboard().player11.setCoord(temp2);
+            PersistanceManager.getpGameboard().token3.setCoord(temp1);
+
+        }
+        else if(move == 121){
+
+            temp1 = PersistanceManager.getpGameboard().player12.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token1.getCoord();
+
+            PersistanceManager.getpGameboard().player12.setCoord(temp2);
+            PersistanceManager.getpGameboard().token1.setCoord(temp1);
+
+        }
+        else if(move == 122){
+
+            temp1 = PersistanceManager.getpGameboard().player12.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token2.getCoord();
+
+            PersistanceManager.getpGameboard().player12.setCoord(temp2);
+            PersistanceManager.getpGameboard().token2.setCoord(temp1);
+
+        }
+        else if(move == 123){
+
+            temp1 = PersistanceManager.getpGameboard().player12.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token3.getCoord();
+
+            PersistanceManager.getpGameboard().player12.setCoord(temp2);
+            PersistanceManager.getpGameboard().token3.setCoord(temp1);
+
+        }
+        else if(move == 131){
+
+            temp1 = PersistanceManager.getpGameboard().player13.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token1.getCoord();
+
+            PersistanceManager.getpGameboard().player13.setCoord(temp2);
+            PersistanceManager.getpGameboard().token1.setCoord(temp1);
+
+        }
+        else if(move == 132){
+
+            temp1 = PersistanceManager.getpGameboard().player13.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token2.getCoord();
+
+            PersistanceManager.getpGameboard().player13.setCoord(temp2);
+            PersistanceManager.getpGameboard().token2.setCoord(temp1);
+
+        }
+        else if(move == 133){
+
+            temp1 = PersistanceManager.getpGameboard().player13.getCoord();
+            temp2 = PersistanceManager.getpGameboard().token3.getCoord();
+
+            PersistanceManager.getpGameboard().player13.setCoord(temp2);
+            PersistanceManager.getpGameboard().token3.setCoord(temp1);
+
+        }else if(move == 1){
+
+        }
+
+        PersistanceManager.getpGameboard().onWin(PersistanceManager.getpGameboard().isWin(
+                PersistanceManager.getpGameboard().player11.getCoord(),
+                PersistanceManager.getpGameboard().player12.getCoord(),
+                PersistanceManager.getpGameboard().player13.getCoord(), 1
+        ));
+
+    }
+
+}
